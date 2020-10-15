@@ -6,7 +6,7 @@ CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
 
 all: $(EXECS)
 
-VectorTester: $(OBJS)
+Tester: $(OBJS)
         $(CC) $(CCFLAGS) $^ -o $@
 
 %.o: %.cpp *.h
