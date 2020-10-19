@@ -2,7 +2,7 @@
 #define __SHAPE_CPP__
 
 
-#include "Shape.cpp"
+#include "Shape.h"
 #include <iostream>
 
 Shape::Shape(std::string shapeName) {}
@@ -16,7 +16,7 @@ return 1;
 
 void Shape::print()
 {
-std::cout << name << std::endl;
+std::cout << this->name << std::endl;
 }
 
 #endif
