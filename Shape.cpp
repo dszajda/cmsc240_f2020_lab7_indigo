@@ -5,6 +5,7 @@
 #include "Shape.h"
 #include <iostream>
 
+Shape::Shape() {}
 Shape::Shape(std::string shapeName) {}
 Shape::~Shape() {}
 
