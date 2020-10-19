@@ -1,7 +1,8 @@
 #ifndef __SHAPE_CPP__
 #define __SHAPE_CPP__
 
-#include "Shape.h"
+
+#include "Shape.cpp"
 #include <iostream>
 
 Shape::Shape(std::string shapeName) {}
@@ -9,7 +10,7 @@ Shape::~Shape() {}
 
 double Shape::getArea()
 {
-return 0;
+return 1;
 //return name.getArea();
 }
 
