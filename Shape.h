@@ -9,6 +9,7 @@ class Shape
         std::string name;
 
     public:
+	Shape();
         Shape(std::string shapeName);
         ~Shape();
 

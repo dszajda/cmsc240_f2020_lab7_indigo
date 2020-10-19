@@ -2,14 +2,14 @@
 #define __CIRCLE_H__
 
 #include <string>
+#include "Shape.h"
 
 class Circle: public Shape {
     private:
-        std::string name;
 	double radius;
-	const long double PI = 3.141592653589793238;
 
     public:
+	Circle();
         Circle(std::string name, double radius);
         ~Circle();
 
