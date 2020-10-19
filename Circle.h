@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Circle: public Shape{
+class Circle: public Shape {
     private:
         std::string name;
 	double radius;
@@ -16,4 +16,5 @@ class Circle: public Shape{
         double getArea();
 
         void print();
+};
 #endif

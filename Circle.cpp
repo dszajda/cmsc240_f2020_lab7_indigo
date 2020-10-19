@@ -14,8 +14,11 @@ Circle::~Circle() {}
 void Circle::print() {
     Shape::print();
     cout << "radius = " << this->radius << endl;
+}
 
-double getArea()
+double getArea() {
     double temp = this->radius*this->radius;
     double temp1 = this->pi*temp;
-    return(temp1); 
+    return(temp1);
+}
+#endif 
