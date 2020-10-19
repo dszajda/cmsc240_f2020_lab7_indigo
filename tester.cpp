@@ -1,9 +1,9 @@
 #include <iostream>
-#include <Shape.h>
+#include "Shape.h"
 
 int main() {
 
-    Shape sh("test");
+    Shape sh{"test"};
     
     std::cout << "Testing getArea() Method:" << std::endl;
     std::cout << "---------" << std::endl;
