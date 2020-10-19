@@ -3,7 +3,7 @@
 
 int main() {
 
-    Shape sh("test");
+    Shape sh{"test"};
     
     std::cout << "Testing getArea() Method:" << std::endl;
     std::cout << "---------" << std::endl;
