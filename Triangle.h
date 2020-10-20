@@ -2,14 +2,16 @@
 #define __TRIANGLE_H__
 
 #include <string>
+#include "Shape.h"
 
 class Triangle : public Shape
 {
-   private
+   private:
       double base;
       double height;
 
    public:
+      Triangle();
       Triangle(std::string name, double base, double height);
       ~Triangle();
       double getArea();

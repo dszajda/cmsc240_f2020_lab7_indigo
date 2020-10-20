@@ -5,10 +5,8 @@
 #include "Shape.h"
 #include <iostream>
 
-Shape::Shape(std::string shapeName)
-{
-name = shapeName;
-}
+Shape::Shape(){}
+Shape::Shape(std::string shapeName) : name{shapeName} {}
 
 Shape::~Shape() {}
 
@@ -19,7 +17,7 @@ return 0;
 
 void Shape::print()
 {
-std::cout << name << std::endl;
+std::cout << this->name << std::endl;
 }
 
 #endif

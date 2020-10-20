@@ -5,22 +5,22 @@
 #include "Triangle.h"
 #include <iostream>
 
-Triangle::Triangle(std::string name, double base, double height) : Shape(name)
-{
-   base = base;
-   height = height;
-}
+Triangle::Triangle() : Shape(), base{0}, height{0} {}
+
+Triangle::Triangle(std::string name, double base, double height) : Shape(name), base{base}, height{height} {}
 
 Triangle::~Triangle(){}
 
 double Triangle::getArea()
 {
-   return (0.5 * base * height);
+   return (0.5 * this->base * this->height);
 }
 
 void Triangle::print()
 {
-std::cout << name << ", " << base << ", " << height << std::endl;
+   Shape::print();
+   std::cout << "base = " << this->base << std::endl;
+   std::cout << "height = " << this->height << std::endl;
 }
 
 #endif

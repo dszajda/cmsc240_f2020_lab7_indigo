@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Shape.h>
+#include "Shape.h"
 
 int main() {
 
@@ -12,7 +12,7 @@ int main() {
 
     std::cout << "Testing print() Method:" << std::endl;
     std::cout << "---------" << std::endl;
-    std::cout << sh.print() << std::endl;
+    sh.print();
     std::cout << "Expected [test]" << std::endl;
 
 }
