@@ -7,7 +7,6 @@
 
 Shape::Shape(){}
 Shape::Shape(std::string shapeName) : name{shapeName} {}
-
 Shape::~Shape() {}
 
 double Shape::getArea()
