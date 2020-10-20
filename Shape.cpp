@@ -5,14 +5,13 @@
 #include "Shape.h"
 #include <iostream>
 
-Shape::Shape() {}
-Shape::Shape(std::string shapeName) {}
+Shape::Shape(){}
+Shape::Shape(std::string shapeName) : name{shapeName} {}
 Shape::~Shape() {}
 
 double Shape::getArea()
 {
-return 1;
-//return name.getArea();
+return 0;
 }
 
 void Shape::print()
