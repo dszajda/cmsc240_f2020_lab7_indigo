@@ -17,8 +17,6 @@ void Circle::print() {
 
 double Circle::getArea() {
     const long double PI = 3.141592653589793238;
-    double temp = this->radius*this->radius;
-    double temp1 = PI*temp;
-    return(temp1);
+    return(this->radius*this->radius*PI);
 }
 #endif 

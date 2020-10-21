@@ -2,6 +2,7 @@
 #include "Shape.h" 
 #include "Triangle.h"
 #include "Rectangle.h"
+#include "Circle.h"
 
 int main() {
 
@@ -64,5 +65,25 @@ int main() {
     std::cout << "Testing print() Method:" << std::endl;
     std::cout << "---------" << std::endl;
     re.print();
-    std::cout << "Expected [test-re, 3, 5]" << std::endl;  
+    std::cout << "Expected [test-re, 3, 5]" << std::endl;
+
+    //-----------------------------------------------------------------------
+    
+    //test Circle Class and its implementation
+    std::cout << std::endl;
+    std::cout << "----------------" << std::endl;
+    std::cout << "Circle Class:" << std::endl;
+    std::cout << "----------------" << std::endl;
+
+    Circle ci{"circle", 2};
+
+    std::cout << "Testing getArea() Method:" << std::endl;
+    std::cout << "---------" << std::endl;
+    std::cout << ci.getArea() << std::endl;
+    std::cout << "Expected [~12.566]" << std::endl;
+
+    std::cout << "Testing print() Method:" << std::endl;
+    std::cout << "---------" << std::endl;
+    ci.print();
+    std::cout << "Expected [circle, 2]" << std::endl;
 }
