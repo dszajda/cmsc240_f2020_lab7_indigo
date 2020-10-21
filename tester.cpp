@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Shape.h" 
 #include "Triangle.h"
+#include "Rectangle.h"
 
 int main() {
 
@@ -42,6 +43,26 @@ int main() {
     std::cout << "Testing print() Method:" << std::endl;
     std::cout << "---------" << std::endl;
     tr.print();
-    std::cout << "Expected [test-tr, 3, 4]" << std::endl;  
-}
+    std::cout << "Expected [test-tr, 3, 4]" << std::endl;
 
+    //------------------------------------------------------------------------
+
+    //test Rectangle Class and its implementation
+    std::cout << std::endl;
+    std::cout << "----------------" << std::endl;
+    std::cout << "Rectangle Class:" << std::endl;
+    std::cout << "----------------" << std::endl;
+
+
+    Rectangle re{"test-re", 3, 5};
+
+    std::cout << "Testing getArea() Method:" << std::endl;
+    std::cout << "---------" << std::endl;
+    std::cout << re.getArea() << std::endl;
+    std::cout << "Expected [15]" << std::endl;
+
+    std::cout << "Testing print() Method:" << std::endl;
+    std::cout << "---------" << std::endl;
+    re.print();
+    std::cout << "Expected [test-re, 3, 5]" << std::endl;  
+}
